@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>notificationBar</tag>
+   <tagClass>org.primefaces.component.notificationbar.NotificationBarTag</tagClass>
+   <componentClass>org.primefaces.component.notificationbar.NotificationBar</componentClass>
+   <componentType>org.primefaces.component.NotificationBar</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.NotificationBarRenderer</rendererType>
+   <rendererClass>org.primefaces.component.notificationbar.NotificationBarRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>widgetVar</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>false</ignoreInComponent>
+         <description>
+		Javascript variable name of the wrapped yui widget 
+	</description>
+      </attribute>
+      <attribute>
+         <name>style</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>
+				 Style of the container element, not the overlay container.
+			</description>
+      </attribute>
+      <attribute>
+         <name>styleClass</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>
+				 Style class of container element, not the overlay container.
+			</description>
+      </attribute>
+      <attribute>
+         <name>position</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>top</defaultValue>
+         <description>
+				 Position of the bar, "bottom" or "top".
+			</description>
+      </attribute>
+      <attribute>
+         <name>effect</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>fade</defaultValue>
+         <description>
+				 Name of the effect, valid values are "slide", "fade" and "none".
+			</description>
+      </attribute>
+      <attribute>
+         <name>effectSpeed</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>normal</defaultValue>
+         <description>
+				 Speed of the effect. "slow", "normal" or "fast";
+			</description>
+      </attribute>
+      <attribute>
+         <name>autoDisplay</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>
+				 When set to true, notification bar will be displayed when page is loaded.
+			</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/yui/utilities/utilities.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/notificationbar/notificationbar.css</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/notificationbar/notificationbar.js</name>
+      </resource>
+   </resources>
+</component>

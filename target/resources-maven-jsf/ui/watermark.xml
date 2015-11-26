@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>watermark</tag>
+   <tagClass>org.primefaces.component.watermark.WatermarkTag</tagClass>
+   <componentClass>org.primefaces.component.watermark.Watermark</componentClass>
+   <componentType>org.primefaces.component.Watermark</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.WatermarkRenderer</rendererType>
+   <rendererClass>org.primefaces.component.watermark.WatermarkRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>value</name>
+         <required>true</required>
+         <type>java.lang.String</type>
+         <description>The text that will be visible as watermark</description>
+      </attribute>
+      <attribute>
+         <name>for</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Id of the component to attach the watermark</description>
+      </attribute>
+      <attribute>
+         <name>forElement</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>jQuery selector to attach the watermark</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/primefaces/watermark/watermark.css</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/watermark/watermark.min.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+   </resources>
+</component>

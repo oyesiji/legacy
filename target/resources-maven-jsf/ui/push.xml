@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>push</tag>
+   <tagClass>org.primefaces.component.push.PushTag</tagClass>
+   <componentClass>org.primefaces.component.push.Push</componentClass>
+   <componentType>org.primefaces.component.Push</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.PushRenderer</rendererType>
+   <rendererClass>org.primefaces.component.push.PushRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>widgetVar</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>false</ignoreInComponent>
+         <description>
+		Javascript variable name of the wrapped yui widget 
+	</description>
+      </attribute>
+      <attribute>
+         <name>channel</name>
+         <required>true</required>
+         <type>java.lang.String</type>
+         <description>
+				Unique channel name of the connection between subscriber and the server.
+			</description>
+      </attribute>
+      <attribute>
+         <name>onpublish</name>
+         <required>true</required>
+         <type>java.lang.String</type>
+         <description>
+				Javascript event handler that is process when the server publishes data.
+			</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/yui/utilities/utilities.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/push/push.js</name>
+      </resource>
+   </resources>
+</component>

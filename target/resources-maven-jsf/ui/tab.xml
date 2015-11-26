@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>tab</tag>
+   <tagClass>org.primefaces.component.tabview.TabTag</tagClass>
+   <componentClass>org.primefaces.component.tabview.Tab</componentClass>
+   <componentType>org.primefaces.component.Tab</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>title</name>
+         <required>true</required>
+         <type>java.lang.String</type>
+         <description>Title of the tab</description>
+      </attribute>
+   </attributes>
+</component>

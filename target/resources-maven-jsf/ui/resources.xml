@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>resources</tag>
+   <tagClass>org.primefaces.component.resources.ResourcesTag</tagClass>
+   <componentClass>org.primefaces.component.resources.Resources</componentClass>
+   <componentType>org.primefaces.component.Resources</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.ResourcesRenderer</rendererType>
+   <rendererClass>org.primefaces.component.resources.ResourcesRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>exclude</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Comma seperated list of resources to exclude.</description>
+      </attribute>
+   </attributes>
+</component>

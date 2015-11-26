@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>sheet</tag>
+   <tagClass>org.primefaces.component.spreadsheet.SheetTag</tagClass>
+   <componentClass>org.primefaces.component.spreadsheet.Sheet</componentClass>
+   <componentType>org.primefaces.component.Sheet</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <parent>javax.faces.component.UIData</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>value</name>
+         <required>false</required>
+         <type>java.lang.Object</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Value of the component that can be either an EL expression or a literal text
+	</description>
+      </attribute>
+      <attribute>
+         <name>var</name>
+         <required>true</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>
+		Name of the request-scoped variable that'll be used as the holder of each rowdata before processing a row
+	</description>
+      </attribute>
+      <attribute>
+         <name>rows</name>
+         <type>java.lang.Integer</type>
+         <defaultValue>0</defaultValue>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Number of rows to display per page
+	</description>
+      </attribute>
+      <attribute>
+         <name>first</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>0</defaultValue>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Index of the first row to be displayed
+	</description>
+      </attribute>
+      <attribute>
+         <name>title</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Title text of the sheet</description>
+      </attribute>
+   </attributes>
+</component>

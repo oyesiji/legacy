@@ -1,0 +1,201 @@
+/*
+ * Copyright 2009 Prime Technology.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.primefaces.component.colorpicker;
+
+import javax.faces.webapp.UIComponentELTag;
+import javax.faces.component.UIComponent;
+
+public class ColorPickerTag extends UIComponentELTag {
+
+	private javax.el.ValueExpression _value;
+	private javax.el.ValueExpression _converter;
+	private javax.el.ValueExpression _immediate;
+	private javax.el.ValueExpression _required;
+	private javax.el.MethodExpression _validator;
+	private javax.el.MethodExpression _valueChangeListener;
+	private javax.el.ValueExpression _requiredMessage;
+	private javax.el.ValueExpression _converterMessage;
+	private javax.el.ValueExpression _validatorMessage;
+	private javax.el.ValueExpression _widgetVar;
+	private javax.el.ValueExpression _header;
+	private javax.el.ValueExpression _showControls;
+	private javax.el.ValueExpression _showHexControls;
+	private javax.el.ValueExpression _showHexSummary;
+	private javax.el.ValueExpression _showHsvControls;
+	private javax.el.ValueExpression _showRGBControls;
+	private javax.el.ValueExpression _showWebSafe;
+
+	public void release(){
+		super.release();
+		this._value = null;
+		this._converter = null;
+		this._immediate = null;
+		this._required = null;
+		this._validator = null;
+		this._valueChangeListener = null;
+		this._requiredMessage = null;
+		this._converterMessage = null;
+		this._validatorMessage = null;
+		this._widgetVar = null;
+		this._header = null;
+		this._showControls = null;
+		this._showHexControls = null;
+		this._showHexSummary = null;
+		this._showHsvControls = null;
+		this._showRGBControls = null;
+		this._showWebSafe = null;
+	}
+
+	protected void setProperties(UIComponent comp){
+		super.setProperties(comp);
+
+		org.primefaces.component.colorpicker.ColorPicker component = null;
+		try {
+			component = (org.primefaces.component.colorpicker.ColorPicker) comp;
+		} catch(ClassCastException cce) {
+			throw new IllegalStateException("Component " + component.toString() + " not expected type.");
+		}
+
+		if(_value != null) {
+			component.setValueExpression("value", _value);
+		}
+		if(_converter != null) {
+			component.setValueExpression("converter", _converter);
+		}
+		if(_immediate != null) {
+			component.setValueExpression("immediate", _immediate);
+		}
+		if(_required != null) {
+			component.setValueExpression("required", _required);
+		}
+		if(_validator != null) {
+			component.addValidator(new javax.faces.validator.MethodExpressionValidator(_validator));
+		}
+		if(_valueChangeListener != null) {
+			component.addValueChangeListener(new javax.faces.event.MethodExpressionValueChangeListener(_valueChangeListener));
+		}
+		if(_requiredMessage != null) {
+			component.setValueExpression("requiredMessage", _requiredMessage);
+		}
+		if(_converterMessage != null) {
+			component.setValueExpression("converterMessage", _converterMessage);
+		}
+		if(_validatorMessage != null) {
+			component.setValueExpression("validatorMessage", _validatorMessage);
+		}
+		if(_widgetVar != null) {
+			component.setValueExpression("widgetVar", _widgetVar);
+		}
+		if(_header != null) {
+			component.setValueExpression("header", _header);
+		}
+		if(_showControls != null) {
+			component.setValueExpression("showControls", _showControls);
+		}
+		if(_showHexControls != null) {
+			component.setValueExpression("showHexControls", _showHexControls);
+		}
+		if(_showHexSummary != null) {
+			component.setValueExpression("showHexSummary", _showHexSummary);
+		}
+		if(_showHsvControls != null) {
+			component.setValueExpression("showHsvControls", _showHsvControls);
+		}
+		if(_showRGBControls != null) {
+			component.setValueExpression("showRGBControls", _showRGBControls);
+		}
+		if(_showWebSafe != null) {
+			component.setValueExpression("showWebSafe", _showWebSafe);
+		}
+	}
+
+	public String getComponentType() {
+		return ColorPicker.COMPONENT_TYPE;
+	}
+
+	public String getRendererType() {
+		return "corg.primefaces.component.ColorPickerRenderer";
+	}
+
+	public void setValue(javax.el.ValueExpression expression){
+		this._value = expression;
+	}
+
+	public void setConverter(javax.el.ValueExpression expression){
+		this._converter = expression;
+	}
+
+	public void setImmediate(javax.el.ValueExpression expression){
+		this._immediate = expression;
+	}
+
+	public void setRequired(javax.el.ValueExpression expression){
+		this._required = expression;
+	}
+
+	public void setValidator(javax.el.MethodExpression expression){
+		this._validator = expression;
+	}
+
+	public void setValueChangeListener(javax.el.MethodExpression expression){
+		this._valueChangeListener = expression;
+	}
+
+	public void setRequiredMessage(javax.el.ValueExpression expression){
+		this._requiredMessage = expression;
+	}
+
+	public void setConverterMessage(javax.el.ValueExpression expression){
+		this._converterMessage = expression;
+	}
+
+	public void setValidatorMessage(javax.el.ValueExpression expression){
+		this._validatorMessage = expression;
+	}
+
+	public void setWidgetVar(javax.el.ValueExpression expression){
+		this._widgetVar = expression;
+	}
+
+	public void setHeader(javax.el.ValueExpression expression){
+		this._header = expression;
+	}
+
+	public void setShowControls(javax.el.ValueExpression expression){
+		this._showControls = expression;
+	}
+
+	public void setShowHexControls(javax.el.ValueExpression expression){
+		this._showHexControls = expression;
+	}
+
+	public void setShowHexSummary(javax.el.ValueExpression expression){
+		this._showHexSummary = expression;
+	}
+
+	public void setShowHsvControls(javax.el.ValueExpression expression){
+		this._showHsvControls = expression;
+	}
+
+	public void setShowRGBControls(javax.el.ValueExpression expression){
+		this._showRGBControls = expression;
+	}
+
+	public void setShowWebSafe(javax.el.ValueExpression expression){
+		this._showWebSafe = expression;
+	}
+
+}

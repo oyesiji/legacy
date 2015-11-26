@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>application</tag>
+   <tagClass>org.primefaces.touch.component.application.ApplicationTag</tagClass>
+   <componentClass>org.primefaces.touch.component.application.Application</componentClass>
+   <componentType>org.primefaces.touch.Application</componentType>
+   <componentFamily>org.primefaces.touch</componentFamily>
+   <rendererType>org.primefaces.touch.component.ApplicationRenderer</rendererType>
+   <rendererClass>org.primefaces.touch.component.application.ApplicationRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>theme</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>default</defaultValue>
+         <description>Theme of the application, 'default' or 'dark'.</description>
+      </attribute>
+      <attribute>
+         <name>icon</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Icon for the application, this icon is used when the app is added to homescreen.</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/yui/utilities/utilities.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/jqtouch/jqtouch.min.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/jqtouch/jqtouch.transitions.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+      <resource>
+         <name>/touch/touchfaces.js</name>
+      </resource>
+   </resources>
+</component>

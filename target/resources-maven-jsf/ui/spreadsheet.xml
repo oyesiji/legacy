@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>spreadsheet</tag>
+   <tagClass>org.primefaces.component.spreadsheet.SpreadsheetTag</tagClass>
+   <componentClass>org.primefaces.component.spreadsheet.Spreadsheet</componentClass>
+   <componentType>org.primefaces.component.Spreadsheet</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.SpreadsheetRenderer</rendererType>
+   <rendererClass>org.primefaces.component.spreadsheet.SpreadsheetRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>widgetVar</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>false</ignoreInComponent>
+         <description>
+		Javascript variable name of the wrapped yui widget 
+	</description>
+      </attribute>
+      <attribute>
+         <name>title</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Title text of the spreadsheet</description>
+      </attribute>
+      <attribute>
+         <name>editable</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>true</defaultValue>
+         <description>Defines if display is editable or readonly</description>
+      </attribute>
+      <attribute>
+         <name>columnWidth</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>java.lang.Integer.MIN_VALUE</defaultValue>
+         <description>Global setting to define common width for each column in pixels</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/primefaces/sheet/jquery.sheet.css</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/ui/jquery-ui.custom.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/sheet/jquery.sheet.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/sheet/sheet.js</name>
+      </resource>
+   </resources>
+</component>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>dock</tag>
+   <tagClass>org.primefaces.component.dock.DockTag</tagClass>
+   <componentClass>org.primefaces.component.dock.Dock</componentClass>
+   <componentType>org.primefaces.component.Dock</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.DockRenderer</rendererType>
+   <rendererClass>org.primefaces.component.dock.DockRenderer</rendererClass>
+   <parent>org.primefaces.component.menu.AbstractMenu</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>model</name>
+         <required>false</required>
+         <type>org.primefaces.model.MenuModel</type>
+         <description>
+				An org.primefaces.model.MenuModel instance to build menu dynamically.
+			</description>
+      </attribute>
+      <attribute>
+         <name>position</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>bottom</defaultValue>
+         <description>Position of the panel: top | bottom.</description>
+      </attribute>
+      <attribute>
+         <name>itemWidth</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>40</defaultValue>
+         <description>Initial width of the items in pixels.</description>
+      </attribute>
+      <attribute>
+         <name>maxWidth</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>50</defaultValue>
+         <description>Maximum width of the items in pixels.</description>
+      </attribute>
+      <attribute>
+         <name>proximity</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>90</defaultValue>
+         <description>Distance when will items start to enlarge.</description>
+      </attribute>
+      <attribute>
+         <name>halign</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>center</defaultValue>
+         <description>Horizontal alignment of doc.</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/primefaces/dock/assets/dock.css</name>
+      </resource>
+      <resource>
+         <name>/yui/utilities/utilities.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/dock/interface.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/dock/dock.js</name>
+      </resource>
+   </resources>
+</component>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>tableView</tag>
+   <tagClass>org.primefaces.touch.component.tableview.TableViewTag</tagClass>
+   <componentClass>org.primefaces.touch.component.tableview.TableView</componentClass>
+   <componentType>org.primefaces.touch.TableView</componentType>
+   <componentFamily>org.primefaces.touch</componentFamily>
+   <rendererType>org.primefaces.touch.component.TableViewRenderer</rendererType>
+   <rendererClass>org.primefaces.touch.component.tableview.TableViewRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+   </attributes>
+</component>

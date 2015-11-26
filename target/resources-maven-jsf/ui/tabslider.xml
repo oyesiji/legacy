@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>tabSlider</tag>
+   <tagClass>org.primefaces.component.tabslider.TabSliderTag</tagClass>
+   <componentClass>org.primefaces.component.tabslider.TabSlider</componentClass>
+   <componentType>org.primefaces.component.TabSlider</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.TabSliderRenderer</rendererType>
+   <rendererClass>org.primefaces.component.tabslider.TabSliderRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>widgetVar</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>false</ignoreInComponent>
+         <description>
+		Javascript variable name of the wrapped yui widget 
+	</description>
+      </attribute>
+      <attribute>
+         <name>activeIndex</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>1</defaultValue>
+         <description>Index of the active tab, count starts from 1.</description>
+      </attribute>
+      <attribute>
+         <name>effect</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>easeInOutExpo</defaultValue>
+         <description>Easing animation type used for slide effect. Default is easeInOutExpo.</description>
+      </attribute>
+      <attribute>
+         <name>effectDuration</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>600</defaultValue>
+         <description>Duration of slide effect in milliseconds.</description>
+      </attribute>
+      <attribute>
+         <name>navigator</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>true</defaultValue>
+         <description>Enables the tab name navigation.</description>
+      </attribute>
+      <attribute>
+         <name>style</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Style to apply to main container element.</description>
+      </attribute>
+      <attribute>
+         <name>styleClass</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>StyleClass to apply to main container element.</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/jquery/plugins/anythingslider/anythingslider.css</name>
+      </resource>
+      <resource>
+         <name>/yui/utilities/utilities.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/anythingslider/jquery.anythingslider.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/anythingslider/jquery.easing.1.2.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/tabslider/tabslider.js</name>
+      </resource>
+   </resources>
+</component>

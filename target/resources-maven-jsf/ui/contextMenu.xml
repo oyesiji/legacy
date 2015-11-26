@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>contextMenu</tag>
+   <tagClass>org.primefaces.component.contextmenu.ContextMenuTag</tagClass>
+   <componentClass>org.primefaces.component.contextmenu.ContextMenu</componentClass>
+   <componentType>org.primefaces.component.ContextMenu</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.ContextMenuRenderer</rendererType>
+   <rendererClass>org.primefaces.component.contextmenu.ContextMenuRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>widgetVar</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>false</ignoreInComponent>
+         <description>
+		Javascript variable name of the wrapped yui widget 
+	</description>
+      </attribute>
+      <attribute>
+         <name>for</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Id of the component to attach the context menu.</description>
+      </attribute>
+      <attribute>
+         <name>style</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Style of the main container of panel.</description>
+      </attribute>
+      <attribute>
+         <name>styleClass</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Style class of the main container of panel.</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/primefaces/menu/menu.css</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/yui/utilities/utilities.js</name>
+      </resource>
+      <resource>
+         <name>/yui/container/container-min.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/menu/menu.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/contextmenu/contextmenu.js</name>
+      </resource>
+   </resources>
+</component>

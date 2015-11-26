@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>keyboard</tag>
+   <tagClass>org.primefaces.component.keyboard.KeyboardTag</tagClass>
+   <componentClass>org.primefaces.component.keyboard.Keyboard</componentClass>
+   <componentType>org.primefaces.component.Keyboard</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.KeyboardRenderer</rendererType>
+   <rendererClass>org.primefaces.component.keyboard.KeyboardRenderer</rendererClass>
+   <parent>javax.faces.component.html.HtmlInputText</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>value</name>
+         <required>false</required>
+         <type>java.lang.Object</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Value of the component that can be either an EL expression or a
+		literal text
+	</description>
+      </attribute>
+      <attribute>
+         <name>converter</name>
+         <required>false</required>
+         <type>java.faces.convert.Converter</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression or a literal text that defines a converter for
+		the component. When it's an EL expression, it's resolved to a
+		converter instance. In case it's a static text, it must refer to
+		a converter id
+	</description>
+      </attribute>
+      <attribute>
+         <name>immediate</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value that specifies the lifecycle phase the
+		valueChangeEvents should be processed, when true the events will
+		be fired at "apply request values", if immediate is set to
+		false, valueChangeEvents are fired in "process validations"
+		phase. Default is false
+	</description>
+      </attribute>
+      <attribute>
+         <name>required</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value that makes the component required, default value
+		is false
+	</description>
+      </attribute>
+      <attribute>
+         <name>validator</name>
+         <required>false</required>
+         <type>javax.faces.validator.Validator</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		A method binding EL expression that refers to a method for
+		validating the input
+	</description>
+      </attribute>
+      <attribute>
+         <name>valueChangeListener</name>
+         <required>false</required>
+         <type>javax.faces.event.ValueChangeListener</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <method-signature>void valueChange(javax.faces.event.ValueChangeEvent)</method-signature>
+         <description>
+		A method binding EL expression that refers to a method for
+		handling a value change event
+	</description>
+      </attribute>
+      <attribute>
+         <name>requiredMessage</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Message to be displayed when required field validation fails
+	</description>
+      </attribute>
+      <attribute>
+         <name>converterMessage</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Message to be displayed when conversion fails
+	</description>
+      </attribute>
+      <attribute>
+         <name>validatorMessage</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Message to be displayed when validation fails
+	</description>
+      </attribute>
+      <!-- Components having these attributes must extend from HtmlInputText so all the attributes are defined as ignoreInComponet 
+	which will ignore code generation in component class since they are already defined in parent HtmlInputText
+-->
+      <attribute>
+         <name>accesskey</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html accesskey attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>alt</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html alt attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>dir</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html dir attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>disabled</name>
+         <required/>
+         <type>boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html disabled attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>lang</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html lang attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>maxlength</name>
+         <required/>
+         <type>int</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html maxlength attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onblur</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onblur attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onchange</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onchange attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onclick</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onclick attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>ondblclick</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html ondblclick attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onfocus</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onfocus attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onkeydown</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onkeydown attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onkeypress</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onkeypress attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onkeyup</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onkeyup attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onmousedown</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onmousedown attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onmousemove</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onmousemove attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onmouseout</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onmouseout attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onmouseover</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onmouseover attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onmouseup</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onmouseup attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>onselect</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html onselect attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>readonly</name>
+         <required/>
+         <type>boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html readonly attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>size</name>
+         <required/>
+         <type>int</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html size attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>style</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html style attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>styleClass</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html class attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>tabindex</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html tabindex attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>title</name>
+         <required/>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Html title attribute of the input text
+	</description>
+      </attribute>
+      <attribute>
+         <name>widgetVar</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>false</ignoreInComponent>
+         <description>
+		Javascript variable name of the wrapped yui widget 
+	</description>
+      </attribute>
+      <attribute>
+         <name>password</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>Displays a password text when enabled.</description>
+      </attribute>
+      <attribute>
+         <name>showMode</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>focus</defaultValue>
+         <description>Specifies the display mode, 'focus','button','both'.</description>
+      </attribute>
+      <attribute>
+         <name>buttonImage</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Image of the button trigger that displays the keyboard.</description>
+      </attribute>
+      <attribute>
+         <name>buttonImageOnly</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>When set to true only image of the button is displayed.</description>
+      </attribute>
+      <attribute>
+         <name>effect</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>fadeIn</defaultValue>
+         <description>Effect of the display animation.</description>
+      </attribute>
+      <attribute>
+         <name>effectDuration</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Length of the display animation.</description>
+      </attribute>
+      <attribute>
+         <name>layout</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <defaultValue>qwerty</defaultValue>
+         <description>Layout the of the keyboard, can be 'qwerty','alphabetic' or custom.</description>
+      </attribute>
+      <attribute>
+         <name>layoutTemplate</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Template of the custom layout.</description>
+      </attribute>
+      <attribute>
+         <name>keypadOnly</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>When set to true, a keypad will be displayed instead of the whole keyboard.</description>
+      </attribute>
+      <attribute>
+         <name>promptLabel</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Label for the prompt text.</description>
+      </attribute>
+      <attribute>
+         <name>closeLabel</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Label for the close key.</description>
+      </attribute>
+      <attribute>
+         <name>clearLabel</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Label for the clear key.</description>
+      </attribute>
+      <attribute>
+         <name>backspaceLabel</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Label for the backspace key.</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/yui/utilities/utilities.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/effects/effects.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/keyboard/keypad.css</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/keyboard/keypad.min.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/keyboard/keyboard.js</name>
+      </resource>
+   </resources>
+</component>

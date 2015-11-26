@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>messages</tag>
+   <tagClass>org.primefaces.component.messages.MessagesTag</tagClass>
+   <componentClass>org.primefaces.component.messages.Messages</componentClass>
+   <componentType>org.primefaces.component.Messages</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.MessagesRenderer</rendererType>
+   <rendererClass>org.primefaces.component.messages.MessagesRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>showSummary</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>true</defaultValue>
+         <description>Specifies if the summary of the FacesMessage should be displayed.</description>
+      </attribute>
+      <attribute>
+         <name>showDetail</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>Specifies if the detail of the FacesMessage should be displayed.</description>
+      </attribute>
+      <attribute>
+         <name>globalOnly</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>When true, only facesmessages with no clientIds are displayed.</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/primefaces/messages/messages.css</name>
+      </resource>
+   </resources>
+</component>

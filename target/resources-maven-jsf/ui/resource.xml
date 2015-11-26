@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>resource</tag>
+   <tagClass>org.primefaces.component.resource.ResourceTag</tagClass>
+   <componentClass>org.primefaces.component.resource.Resource</componentClass>
+   <componentType>org.primefaces.component.Resource</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.ResourceRenderer</rendererType>
+   <rendererClass>org.primefaces.component.resource.ResourceRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>name</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Path of the resource to be exluded.</description>
+      </attribute>
+   </attributes>
+</component>

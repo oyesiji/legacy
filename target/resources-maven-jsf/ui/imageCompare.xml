@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>imageCompare</tag>
+   <tagClass>org.primefaces.component.imagecompare.ImageCompareTag</tagClass>
+   <componentClass>org.primefaces.component.imagecompare.ImageCompare</componentClass>
+   <componentType>org.primefaces.component.ImageCompare</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.ImageCompareRenderer</rendererType>
+   <rendererClass>org.primefaces.component.imagecompare.ImageCompareRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>leftImage</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Source of the image placed on the left side.</description>
+      </attribute>
+      <attribute>
+         <name>rightImage</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Source of the image placed on the right side.</description>
+      </attribute>
+      <attribute>
+         <name>width</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Width of the images.</description>
+      </attribute>
+      <attribute>
+         <name>height</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Height of the images.</description>
+      </attribute>
+      <attribute>
+         <name>style</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Style of the main container element.</description>
+      </attribute>
+      <attribute>
+         <name>styleClass</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Style class of the main container element.</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/yui/utilities/utilities.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/ui/jquery-ui.custom.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/plugins/imagecompare/jquery.beforeafter.min.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+   </resources>
+</component>

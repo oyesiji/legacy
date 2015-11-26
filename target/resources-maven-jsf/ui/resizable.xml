@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>resizable</tag>
+   <tagClass>org.primefaces.component.resizable.ResizableTag</tagClass>
+   <componentClass>org.primefaces.component.resizable.Resizable</componentClass>
+   <componentType>org.primefaces.component.Resizable</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.ResizableRenderer</rendererType>
+   <rendererClass>org.primefaces.component.resizable.ResizableRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Id of the component</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		Boolean value to specify the visibility of the component
+	</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>
+		An EL expression that maps to a server-side component instance
+		in a backing bean
+	</description>
+      </attribute>
+      <attribute>
+         <name>widgetVar</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>false</ignoreInComponent>
+         <description>
+		Javascript variable name of the wrapped yui widget 
+	</description>
+      </attribute>
+      <attribute>
+         <name>proxy</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>Makes the resizable use a proxy</description>
+      </attribute>
+      <attribute>
+         <name>status</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>Shows the height and width of the resizing component</description>
+      </attribute>
+      <attribute>
+         <name>handles</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Handles to use, any combination of 't', 'b', 'r', 'l', 'bl', 'br', 'tl', 'tr' is valid, shortcut "all" enables all handlers.</description>
+      </attribute>
+      <attribute>
+         <name>ghost</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>Displays a ghost effect.</description>
+      </attribute>
+      <attribute>
+         <name>knobHandles</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>Displays smaller handles</description>
+      </attribute>
+      <attribute>
+         <name>animate</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>false</defaultValue>
+         <description>Displays a ghost effect.</description>
+      </attribute>
+      <attribute>
+         <name>effect</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Animation effect.</description>
+      </attribute>
+      <attribute>
+         <name>animateDuration</name>
+         <required>false</required>
+         <type>java.lang.Double</type>
+         <defaultValue>0.75</defaultValue>
+         <description>Duration of the animation.</description>
+      </attribute>
+      <attribute>
+         <name>maxWidth</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>Integer.MIN_VALUE</defaultValue>
+         <description>Maximum width of the resizable</description>
+      </attribute>
+      <attribute>
+         <name>maxHeight</name>
+         <required>false</required>
+         <defaultValue>Integer.MIN_VALUE</defaultValue>
+         <type>java.lang.Integer</type>
+         <description>Maximum height of the resizable</description>
+      </attribute>
+      <attribute>
+         <name>minWidth</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>Integer.MIN_VALUE</defaultValue>
+         <description>Minimum width of the resizable</description>
+      </attribute>
+      <attribute>
+         <name>minHeight</name>
+         <required>false</required>
+         <defaultValue>Integer.MIN_VALUE</defaultValue>
+         <type>java.lang.Integer</type>
+         <description>Minimum height of the resizable</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>/yui/resize/assets/skins/sam/resize.css</name>
+      </resource>
+      <resource>
+         <name>/yui/utilities/utilities.js</name>
+      </resource>
+      <resource>
+         <name>/yui/resize/resize-min.js</name>
+      </resource>
+      <resource>
+         <name>/jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>/primefaces/core/core.js</name>
+      </resource>
+   </resources>
+</component>
